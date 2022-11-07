@@ -1,0 +1,206 @@
+.contactPage {
+  display: flex;
+  flex-direction: column;
+    height: auto;
+    /* width: 100%; */
+    /* background-color: aqua; */
+    padding: 30px 15px;
+}
+
+.contactUs {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactDetails {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 80px;
+  font-family: "Nunito", sans-serif;
+  justify-content: center;
+
+
+}
+
+.contactHeading {
+  flex: 0.3;
+  display: flex;
+  padding: 0 0 0 100px;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  flex: 1;
+  padding: 60px 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactHeading h1 {
+  font-size: 52px;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+.contactInfo {
+  display: flex;
+  flex: 0.5;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 44px;
+}
+
+.info1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0.4;
+}
+
+.info2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0.6;
+}
+
+.contactLinks {
+  display: flex;
+  flex: 0.5;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.link p {
+  position: relative;
+  cursor: pointer;
+}
+
+.link p::after {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: black;
+  transition: 400ms;
+  right: 50%;
+}
+
+.link p:hover::after {
+  width: 100%;
+  right: 0;
+}
+
+.socialContainer {
+  display: flex;
+  align-items: center;
+}
+
+.socialIcon {
+  display: flex;
+  width: 75px;
+  height: 50px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.socialIcon i {
+  position: relative;
+  transition: 400ms;
+}
+
+.socialIcon i::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  background: black;
+  transition: 400ms;
+  margin-top: 0px;
+  right: 50%;
+}
+
+.socialIcon:hover i::after {
+  width: 200%;
+  margin-top: 10px;
+  right: -50%;
+}
+
+.socialIcon:hover i {
+  margin-bottom: 10px;
+}
+
+
+@media (max-width:801px)  { 
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  .contactDetails{
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    padding: 15px 30px;
+
+  }
+.contactInfo{
+  flex: 1;
+}
+.contactLinks{
+  flex: 1;
+  justify-content: center;
+}
+.info1 {
+  display: flex;
+  flex-direction: column;
+align-items: flex-start;  
+flex: 0.5;
+}
+
+.info2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;  
+  flex: 0.5;
+}
+.social {
+  flex: 1;
+  padding: 30px;
+}
+.socialContainer{
+  flex: 1;
+  justify-content: space-evenly;
+
+}
+.socialIcon {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+}
+
+@media (max-width:600px)  {
+   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+
+  }
+
+@media (max-width:480px)  { 
+  /* smartphones, Android phones, landscape iPhone */ 
+
+}
+
+@media (max-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }

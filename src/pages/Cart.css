@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.cartHeader {
+  display: flex;
+  height: 8vh;
+  background-color: #2C2C2C;
+  box-sizing: border-box;
+  padding: 15px;
+  align-items: center;
+  color: white;
+
+}
+
+.cartHeader i{
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.cartHeader p{
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.cartBody {
+  display: flex;
+  flex-direction: column;
+
+  height: 84vh;
+  padding: 20px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.cartBody::-webkit-scrollbar {
+  display: none;
+}
+
+.cartList{
+  display: flex;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 20px;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #dfdfdf;
+      border: solid 0.1px rgb(190, 188, 188);
+      font: "Montserrat", "Noto Sans", "Roboto", "Arial", sans-serif;
+
+}
+
+.cartProduct{
+  display: flex;
+  flex: .9;
+  height: 100%;
+  padding: 14px;
+  box-sizing: border-box;
+align-items: center;
+justify-content: space-between;
+}
+
+.cartRemove{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: .1;
+  border-left: solid 1px rgb(131, 131, 131);
+  height: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: small;
+  cursor: pointer;
+}
+
+.cartFooter {
+  display: flex;
+  height: 8vh;
+  background-color: rgb(24, 39, 39);
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,47 @@
+
+
+.preloader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #CCEAEC;
+  z-index: 100;
+  display: block;
+  transition: display 0.5s ease;
+}
+
+.preloader img {
+  position: absolute;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: preloading 1s infinite;
+}
+
+.hidePreloader{
+  display: none;
+}
+@keyframes preloading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes preloading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}

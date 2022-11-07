@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+.titleContainer{
+  width: auto;
+}
+
+.title{
+  position: relative;
+  width: max-content;
+    color: #1A1A1A;
+    display: block;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-left: 16px;
+    margin-bottom: 40px;
+    letter-spacing: 0.02em;
+    font: "Montserrat", "Noto Sans", "Roboto", "Arial", sans-serif;
+    cursor: default;
+}
+
+
+.title::after {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: black;
+  transition: 300ms;
+  right: 90%;
+  margin-top: 6px;
+}
+
+.title:hover::after {
+  width: 100%;
+  right: 0;
+}
